@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="carrot-backend" />
+        <module name="carrot-frontend" />
+        <module name="eaternity-batch" />
+        <module name="eaternity-core" />
+        <module name="eaternity-ear" />
+        <module name="eaternity-nlp" />
+        <module name="eaternity-test" />
+        <module name="eaternity-webapp" />
+        <module name="eaternity-webservice" />
+        <module name="ecotransit-client" />
+        <module name="frontend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="alpha-centauri" target="1.7" />
+      <module name="api" target="1.7" />
+      <module name="carrot-backend" target="1.7" />
+      <module name="carrot-frontend" target="1.7" />
+      <module name="eaternity-batch" target="1.7" />
+      <module name="eaternity-cloud" target="1.7" />
+      <module name="eaternity-core" target="1.7" />
+      <module name="eaternity-ear" target="1.7" />
+      <module name="eaternity-nlp" target="1.7" />
+      <module name="eaternity-test" target="1.7" />
+      <module name="eaternity-webapp" target="1.7" />
+      <module name="eaternity-webservice" target="1.7" />
+      <module name="ecotransit-client" target="1.7" />
+      <module name="frontend" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

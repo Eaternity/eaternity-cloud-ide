@@ -1,0 +1,11 @@
+*.iml
+.idea/artifacts/
+.idea/libraries/
+.idea/sonarlint/
+.idea/dictionaries/
+.idea/inspectionProfiles/
+checkstyle-idea.xml
+misc.xml
+modules.xml
+uiDesigner.xml
+workspace.xml
