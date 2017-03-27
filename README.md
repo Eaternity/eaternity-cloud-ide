@@ -19,3 +19,9 @@ Different directory structure could lead to problems.
 - cd ~/git
 - git clone git@github.com:Eaternity/eaternity-cloud.git
 - git clone git@github.com:Eaternity/eaternity-cloud-ide.git
+
+- start intellij
+- check if maven is enabled, if not
+- - View -> Tool Windows -> Maven Projects
+- - click + and select eaternity-cloud/pom.xml
+
