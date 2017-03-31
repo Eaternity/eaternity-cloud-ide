@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="nlp" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.50" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-7-oracle">
+  <configuration default="false" name="nlp" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.50" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-7-oracle">
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="COMMON_VM_ARGUMENTS" value="-Xmx4096M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -28,8 +28,8 @@
     </ConfigurationWrapper>
     <method>
       <option name="Make" enabled="false" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$USER_HOME$/git/eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$USER_HOME$/git/eaternity-cloud/eaternity-batch/pom.xml" goal="package -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-batch/pom.xml" goal="package -DskipTests" />
       <option name="BuildArtifacts" enabled="true">
         <artifact name="eaternity-nlp:war exploded" />
       </option>
