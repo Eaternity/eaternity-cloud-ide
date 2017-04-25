@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="webapp" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.50" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx1024M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx4096M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
       <option name="artifact" value="eaternity-webapp:war exploded" />
@@ -57,8 +57,8 @@
     </ConfigurationWrapper>
     <method>
       <option name="Make" enabled="false" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$USER_HOME$/git/eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$USER_HOME$/git/eaternity-cloud/eaternity-webapp/pom.xml" goal="package -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="package -DskipTests" />
       <option name="BuildArtifacts" enabled="true">
         <artifact name="eaternity-webapp:war exploded" />
       </option>
