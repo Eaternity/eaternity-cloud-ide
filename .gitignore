@@ -4,6 +4,7 @@
 .idea/sonarlint/
 .idea/dictionaries/
 .idea/inspectionProfiles/
+.idea/kotlinc.xml
 checkstyle-idea.xml
 misc.xml
 modules.xml
