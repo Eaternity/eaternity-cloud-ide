@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="WebApp SDM" type="GWT.ConfigurationType" factoryName="GWT Configuration">
     <module name="eaternity-webapp" />
-    <option name="VM_PARAMETERS" value="-Xmx2048m -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="VM_PARAMETERS" value="-Xmx4096m -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="GWT_MODULE" value="ch.eaternity.webapp.Eaternity-Webapp" />
     <option name="SERVER_ID" value="app-engine:Google App Engine Standard Local Server" />
     <option name="OPEN_IN_BROWSER" value="false" />
