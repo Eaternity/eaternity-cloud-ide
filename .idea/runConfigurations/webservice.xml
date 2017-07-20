@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="webservice" type="GoogleAppEngineDevServer" factoryName="Local" activateToolWindowBeforeRun="false" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx1024M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx5120M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
       <option name="artifact" value="eaternity-webservice:war exploded" />
