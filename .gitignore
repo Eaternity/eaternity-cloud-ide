@@ -10,3 +10,4 @@ misc.xml
 modules.xml
 uiDesigner.xml
 workspace.xml
+local_db.bin*
