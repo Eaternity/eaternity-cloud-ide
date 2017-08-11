@@ -1,15 +1,31 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="carrot" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
+  <configuration default="false" name="carrot-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="Google App Engine Standard Local Server" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="COMMON_VM_ARGUMENTS" value="-Xmx4096M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
-      <option name="artifact" value="carrot-backend:war exploded" />
-      <option name="port" value="8888" />
+      <artifact>carrot-frontend:war exploded</artifact>
       <port>8888</port>
-      <artifact>carrot-backend:war exploded</artifact>
     </server-settings>
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="36957" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
     <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
       <option name="USE_ENV_VARIABLES" value="true" />
       <STARTUP>
@@ -46,7 +62,7 @@
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests -Dgwt.compiler.skip=true" />
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/carrot-backend/pom.xml" goal="package -DskipTests" />
       <option name="BuildArtifacts" enabled="true">
-        <artifact name="carrot-backend:war exploded" />
+        <artifact name="carrot-frontend:war exploded" />
       </option>
     </method>
   </configuration>

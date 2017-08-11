@@ -1,16 +1,47 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ITdebug" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-7-oracle/">
+  <configuration default="false" name="ITdebug-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="Google App Engine Standard Local Server" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-7-oracle/">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled " />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
-      <option name="artifact" value="eaternity-test:war exploded" />
-      <option name="port" value="8888" />
-      <port>8888</port>
       <artifact>eaternity-test:war exploded</artifact>
+      <port>8888</port>
     </server-settings>
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="42429" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
     <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Run">
       <option name="USE_ENV_VARIABLES" value="true" />
       <STARTUP>
         <option name="USE_DEFAULT" value="true" />
@@ -34,6 +65,7 @@
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="clean install -DskipTests -Dgwt.compiler.skip=true" />
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-test/pom.xml" goal="clean package -DskipTests" />
       <option name="BuildArtifacts" enabled="true">
+        <artifact name="eaternity-test:war" />
         <artifact name="eaternity-test:war exploded" />
       </option>
     </method>

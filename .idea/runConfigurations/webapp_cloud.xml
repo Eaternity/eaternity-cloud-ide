@@ -1,15 +1,31 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ear" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64">
+  <configuration default="false" name="webapp-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="Google App Engine Standard Local Server" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx5120M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
-      <option name="artifact" value="eaternity-ear:ear exploded" />
-      <option name="port" value="8888" />
+      <artifact>eaternity-webapp:war exploded</artifact>
       <port>8888</port>
-      <artifact>eaternity-ear:ear exploded</artifact>
     </server-settings>
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="36603" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
     <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
       <option name="USE_ENV_VARIABLES" value="true" />
       <STARTUP>
@@ -42,10 +58,12 @@
     </ConfigurationWrapper>
     <method>
       <option name="Make" enabled="false" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="clean install -DskipTests" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="clean install -DskipTests -Dgwt.compiler.force" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-nlp/pom.xml" goal="clean install -DskipTests" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-ear/pom.xml" goal="clean package -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="package -DskipTests" />
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="eaternity-webapp:war" />
+        <artifact name="eaternity-webapp:war exploded" />
+      </option>
     </method>
   </configuration>
 </component>

@@ -3,7 +3,7 @@
     <module name="eaternity-webapp" />
     <option name="VM_PARAMETERS" value="-Xmx2048m -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
     <option name="GWT_MODULE" value="ch.eaternity.webapp.Eaternity-Webapp" />
-    <option name="SERVER_ID" value="app-engine:AppEngine Dev 1.9.54" />
+    <option name="SERVER_ID" value="app-engine:Google App Engine Standard Local Server" />
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
     <option name="USE_SUPER_DEV_MODE" value="true" />
@@ -12,6 +12,9 @@
       <option name="Make" enabled="false" />
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="clean install  -DskipTests" />
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="clean compile" />
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="eaternity-webapp:war exploded" />
+      </option>
     </method>
   </configuration>
 </component>
