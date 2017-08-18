@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="webapp-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="Google App Engine Standard Local Server" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
@@ -67,3 +68,4 @@
     </method>
   </configuration>
 </component>
+

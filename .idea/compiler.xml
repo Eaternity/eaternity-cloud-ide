@@ -21,17 +21,17 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="carrot-backend" target="1.7" />
-      <module name="carrot-frontend" target="1.7" />
-      <module name="eaternity-batch" target="1.7" />
-      <module name="eaternity-cloud" target="1.7" />
-      <module name="eaternity-core" target="1.7" />
-      <module name="eaternity-ear" target="1.7" />
-      <module name="eaternity-nlp" target="1.7" />
-      <module name="eaternity-test" target="1.7" />
-      <module name="eaternity-webapp" target="1.7" />
-      <module name="eaternity-webservice" target="1.7" />
-      <module name="ecotransit-client" target="1.7" />
+      <module name="carrot-backend" target="1.8" />
+      <module name="carrot-frontend" target="1.8" />
+      <module name="eaternity-batch" target="1.8" />
+      <module name="eaternity-cloud" target="1.8" />
+      <module name="eaternity-core" target="1.8" />
+      <module name="eaternity-ear" target="1.8" />
+      <module name="eaternity-nlp" target="1.8" />
+      <module name="eaternity-test" target="1.8" />
+      <module name="eaternity-webapp" target="1.8" />
+      <module name="eaternity-webservice" target="1.8" />
+      <module name="ecotransit-client" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

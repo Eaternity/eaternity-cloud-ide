@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="WebApp SDM" type="GWT.ConfigurationType" factoryName="GWT Configuration">
     <module name="eaternity-webapp" />
@@ -18,3 +19,4 @@
     </method>
   </configuration>
 </component>
+

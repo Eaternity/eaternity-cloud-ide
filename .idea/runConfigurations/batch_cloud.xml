@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="batch-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="Google App Engine Standard Local Server" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-8-openjdk-amd64">
     <option name="OPEN_IN_BROWSER" value="false" />
@@ -69,3 +70,4 @@
     </method>
   </configuration>
 </component>
+
