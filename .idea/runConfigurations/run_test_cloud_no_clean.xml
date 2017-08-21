@@ -1,0 +1,68 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run test-cloud no-clean" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
+    <option name="OPEN_IN_BROWSER" value="false" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled " />
+    <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+    <server-settings>
+      <artifact>eaternity-test:war exploded</artifact>
+      <port>8888</port>
+    </server-settings>
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="42429" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method>
+      <option name="Make" enabled="false" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webservice/pom.xml" goal="package -Dmaven.test.skip.exec" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-batch/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-nlp/pom.xml" goal="install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-test/pom.xml" goal="package -DskipTests" />
+    </method>
+  </configuration>
+</component>

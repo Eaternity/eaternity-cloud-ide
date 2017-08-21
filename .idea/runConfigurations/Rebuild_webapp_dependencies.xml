@@ -1,0 +1,30 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Rebuild webapp dependencies" type="MavenRunConfiguration" factoryName="Maven">
+    <MavenSettings>
+      <option name="myGeneralSettings" />
+      <option name="myRunnerSettings" />
+      <option name="myRunnerParameters">
+        <MavenRunnerParameters>
+          <option name="profiles">
+            <set />
+          </option>
+          <option name="goals">
+            <list>
+              <option value="compile" />
+              <option value="-DskipTests" />
+            </list>
+          </option>
+          <option name="profilesMap">
+            <map />
+          </option>
+          <option name="resolveToWorkspace" value="false" />
+          <option name="workingDirPath" value="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp" />
+        </MavenRunnerParameters>
+      </option>
+    </MavenSettings>
+    <method>
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="clean install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="clean install -DskipTests" />
+    </method>
+  </configuration>
+</component>

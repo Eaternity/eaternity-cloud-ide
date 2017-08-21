@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="run test" type="js.build_tools.npm" factoryName="npm" singleton="false">
+  <configuration default="false" name="run carrot-frontend test" type="js.build_tools.npm" factoryName="npm" singleton="false">
     <package-json value="$PROJECT_DIR$/../eaternity-cloud/carrot-frontend/src/main/javascript/package.json" />
     <command value="run" />
     <scripts>
@@ -12,4 +11,3 @@
     <method />
   </configuration>
 </component>
-
