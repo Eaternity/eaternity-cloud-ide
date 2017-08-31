@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="run test-cloud no-clean" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled " />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin " />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
       <artifact>eaternity-test:war exploded</artifact>
