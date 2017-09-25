@@ -25,6 +25,7 @@
     </MavenSettings>
     <method>
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="clean install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/api-core/pom.xml" goal="clean install -DskipTests" />
     </method>
   </configuration>
 </component>

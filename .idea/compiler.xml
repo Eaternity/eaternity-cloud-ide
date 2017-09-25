@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
+        <module name="api-core" />
         <module name="carrot-backend" />
         <module name="carrot-frontend" />
         <module name="eaternity-batch" />
@@ -21,6 +22,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+        <module name="api"  target="1.8" />
+        <module name="api-core"  target="1.8" />
       <module name="carrot-backend" target="1.8" />
       <module name="carrot-frontend" target="1.8" />
       <module name="eaternity-batch" target="1.8" />

@@ -1,15 +1,15 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="run carrot-cloud" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
+  <configuration default="false" name="run webapp" type="gcp-app-engine-local-run" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.54" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="COMMON_VM_ARGUMENTS" value="-Xmx4096M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Xmx4096M -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin " />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
-      <artifact>carrot-frontend:war exploded</artifact>
+      <artifact>carrot-backend:war exploded</artifact>
       <port>8888</port>
     </server-settings>
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     <RunnerSettings RunnerId="Debug">
-      <option name="DEBUG_PORT" value="36957" />
+      <option name="DEBUG_PORT" value="36603" />
     </RunnerSettings>
     <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
       <option name="USE_ENV_VARIABLES" value="true" />
@@ -58,9 +58,8 @@
     </ConfigurationWrapper>
     <method>
       <option name="Make" enabled="false" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/ecotransit-client/pom.xml" goal="install" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="install -DskipTests -Dgwt.compiler.skip=true" />
-      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/carrot-backend/pom.xml" goal="package -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-core/pom.xml" goal="clean install -DskipTests" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../eaternity-cloud/eaternity-webapp/pom.xml" goal="clean package -DskipTests" />
     </method>
   </configuration>
 </component>
