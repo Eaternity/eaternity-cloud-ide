@@ -4,7 +4,7 @@
     <option name="COMMON_VM_ARGUMENTS" value="-Xmx2048M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Ddatastore.backing_store=$PROJECT_DIR$/local_db.bin " />
     <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
     <server-settings>
-      <artifact>carrot-backend:war exploded</artifact>
+      <artifact>eaternty-test:war exploded</artifact>
       <port>8888</port>
     </server-settings>
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
